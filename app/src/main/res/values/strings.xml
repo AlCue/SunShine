@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProjectSunShine</string>
+    <string name="titulo">Registro</string>
+    <string name="usuario">Nombre Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="repetir_contraseña">Repetir Contraseña</string>
+    <string name="enviar">Enviar</string>
+</resources>

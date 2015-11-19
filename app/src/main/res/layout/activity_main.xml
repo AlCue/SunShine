@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:id="@+id/ImageF"
+        android:src="@drawable/oceansunset"
+        />
+
+    <TextView
+        android:text="@string/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/Titulo"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Titulo"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:id="@+id/Image"
+        android:src="@drawable/nubes"
+        />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Titulo"
+        android:hint="@string/usuario"
+        android:id="@+id/Usuario" />
+
+    <EditText android:id="@+id/Contraseña"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="@string/contraseña"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:layout_below="@+id/Usuario"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText android:id="@+id/ContraseñaR"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="@string/repetir_contraseña"
+        android:inputType="textPassword"
+        android:freezesText="true"
+        android:layout_gravity="center"
+        android:layout_below="@+id/Contraseña"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Enviar"
+        android:layout_width="fill_parent"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_below="@+id/ContraseñaR"
+        android:text="@string/enviar"/>
+
+</RelativeLayout>
